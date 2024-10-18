@@ -34,6 +34,7 @@ namespace EDDemo.Estructuras_No_Lineales
             if (Nodo == null)
             {
                 Nodo = new NodoBinario(Dato);
+                //CAMBIO 1
 
                 if (Raiz == null)
                     Raiz = Nodo;
