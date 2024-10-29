@@ -78,6 +78,7 @@ namespace EDDemo.Estructuras_No_Lineales
             return b.ToString();
         }
 
+        //
         public void PreOrden(NodoBinario nodo)
         {
             if (nodo == null)
