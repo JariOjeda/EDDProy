@@ -55,17 +55,6 @@ namespace EDDemo.Estructuras_No_Lineales
 
         }
 
-        private void btnLimpiar_Click(object sender, EventArgs e)
-        {
-            miArbol = null;
-            miRaiz = null;
-            miArbol = new ArbolBusqueda();
-            txtArbol.Text = "";
-            txtDato.Text = "";
-            lblRecorridoPreOrden.Text = "";
-            lblRecorridoInOrden.Text = "";
-            lblRecorridoPostOrden.Text = "";
-        }
 
         private void btnCrearArbol_Click(object sender, EventArgs e)
         {
@@ -167,6 +156,7 @@ namespace EDDemo.Estructuras_No_Lineales
         private void btnGrafica_Click(object sender, EventArgs e)
         {
             String graphVizString;
+            String strOrientacion = "";
 
             miRaiz = miArbol.RegresaRaiz();
             if (miRaiz == null)
@@ -175,8 +165,13 @@ namespace EDDemo.Estructuras_No_Lineales
                 return;
             }
 
+            if (rbOrientacion2.Checked)
+            {
+                strOrientacion = "rankdir=\"LR\";";
+            }
             StringBuilder b = new StringBuilder();
-            b.Append("digraph G { node [shape=\"circle\"]; " + Environment.NewLine);
+            //rankdir="LR";
+            b.Append("digraph G { " + strOrientacion + " node [shape=\"circle\"]; " + Environment.NewLine);
             b.Append(miArbol.ToDot(miRaiz));
             b.Append("}");
             graphVizString = b.ToString();
@@ -190,6 +185,69 @@ namespace EDDemo.Estructuras_No_Lineales
             graf.ActualizaGrafica(bm);
             graf.MdiParent = this.MdiParent;
             graf.Show();
+        }
+
+        private void btnEliminarPredecesor_Click(object sender, EventArgs e)
+        {
+            int valor = int.Parse(txtDato.Text);
+            miArbol.EliminarPredecesor(miArbol.RegresaRaiz(), valor);
+            miArbol.strArbol = "";
+            miArbol.MuestraArbolAcostado(1, miRaiz);
+            txtArbol.Text = miArbol.strArbol;
+        }
+
+        private void btnEliminarSucesor_Click(object sender, EventArgs e)
+        {
+            int valor = int.Parse(txtDato.Text);
+            miArbol.EliminarSucesor(miArbol.RegresaRaiz(), valor);
+            miArbol.strArbol = "";
+            miArbol.MuestraArbolAcostado(1, miRaiz);
+            txtArbol.Text = miArbol.strArbol;
+        }
+
+        private void btnEsCompleto_Click(object sender, EventArgs e)
+        {
+            bool esCompleto = miArbol.EsCompleto();
+            MessageBox.Show(esCompleto ? "El arbol es completo." : "El arbol NO es completo");
+        }
+
+        private void btnEsLleno_Click(object sender, EventArgs e)
+        {
+            bool esLleno = miArbol.EsLleno();
+            MessageBox.Show(esLleno ? "El arbol es lleno." : "El arbol NO es lleno.");
+        }
+
+        private void btnContarNodos_Click(object sender, EventArgs e)
+        {
+            int nodos = miArbol.ContarNodos(miRaiz);
+            MessageBox.Show($"El arbol tiene {nodos} nodos.");
+        }
+
+        private void btnContarHojas_Click(object sender, EventArgs e)
+        {
+            int hojas = miArbol.ContarHojas(miRaiz);
+            MessageBox.Show($"El arbol tiene {hojas} hojas.");
+        }
+
+        private void btnAltura_Click(object sender, EventArgs e)
+        {
+            int altura = miArbol.Altura(miRaiz);
+            MessageBox.Show($"La altura del arbol es: {altura}");
+        }
+
+        private void btnRecorrerPorNiveles_Click(object sender, EventArgs e)
+        {
+            miArbol.RecorrerPorNiveles();
+            lblRecorridoPorNiveles.Text = miArbol.strRecorrido;
+        }
+
+        private void btnPodar_Click(object sender, EventArgs e)
+        {
+            miArbol.PodarArbolCompleto();
+            txtArbol.Text = "Arbol podado.";
+            lblRecorridoPreOrden.Text = "";
+            lblRecorridoInOrden.Text = "";
+            lblRecorridoPostOrden.Text = "";
         }
     }
 }
