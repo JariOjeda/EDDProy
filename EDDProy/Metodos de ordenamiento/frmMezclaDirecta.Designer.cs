@@ -1,6 +1,6 @@
-﻿namespace EDDemo.Estructuras_Lineales.Clases
+﻿namespace EDDemo.Metodos_de_ordenamiento
 {
-    partial class Colas
+    partial class frmMezclaDirecta
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Text = "frmMezclaDirecta";
         }
 
         #endregion

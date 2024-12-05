@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EDDemo.Estructuras_Lineales.Clases
+namespace EDDemo.Metodos_de_ordenamiento
 {
-    public partial class Colas : Form
+    public partial class frmRadix : Form
     {
-        public Colas()
+        public frmRadix()
         {
             InitializeComponent();
         }

@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EDDemo.Estructuras_No_Lineales;
 
-namespace EDDemo
+namespace EDDemo.Estructuras_Lineales.Clases
 {
-    public class Nodo
+    public class NodoCola<T>
     {
-        public String Dato;
-        public Nodo Sig;
-        public Nodo(string dato)
+        public T Dato;
+        public NodoCola<T> Sig;
+
+        public NodoCola(T dato)
         {
             Dato = dato;
             Sig = null;
