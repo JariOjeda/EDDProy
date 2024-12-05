@@ -43,16 +43,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(227, 28);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(273, 31);
+            this.label1.Size = new System.Drawing.Size(304, 45);
             this.label1.TabIndex = 88;
             this.label1.Text = "MEZCLA NATURAL";
             // 
             // TxtTiempo
             // 
-            this.TxtTiempo.Location = new System.Drawing.Point(412, 403);
+            this.TxtTiempo.Location = new System.Drawing.Point(436, 397);
             this.TxtTiempo.Name = "TxtTiempo";
             this.TxtTiempo.ReadOnly = true;
             this.TxtTiempo.Size = new System.Drawing.Size(78, 20);
@@ -60,12 +61,15 @@
             // 
             // btnOrdenar
             // 
-            this.btnOrdenar.Location = new System.Drawing.Point(412, 129);
+            this.btnOrdenar.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnOrdenar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdenar.ForeColor = System.Drawing.Color.White;
+            this.btnOrdenar.Location = new System.Drawing.Point(530, 85);
             this.btnOrdenar.Name = "btnOrdenar";
-            this.btnOrdenar.Size = new System.Drawing.Size(360, 20);
+            this.btnOrdenar.Size = new System.Drawing.Size(133, 41);
             this.btnOrdenar.TabIndex = 86;
             this.btnOrdenar.Text = "Ordenar";
-            this.btnOrdenar.UseVisualStyleBackColor = true;
+            this.btnOrdenar.UseVisualStyleBackColor = false;
             this.btnOrdenar.Click += new System.EventHandler(this.btnOrdenar_Click);
             // 
             // label6
@@ -80,29 +84,32 @@
             // 
             // TxtListaOrdenada
             // 
-            this.TxtListaOrdenada.Location = new System.Drawing.Point(412, 179);
+            this.TxtListaOrdenada.Location = new System.Drawing.Point(436, 179);
             this.TxtListaOrdenada.Multiline = true;
             this.TxtListaOrdenada.Name = "TxtListaOrdenada";
-            this.TxtListaOrdenada.Size = new System.Drawing.Size(360, 212);
+            this.TxtListaOrdenada.Size = new System.Drawing.Size(307, 212);
             this.TxtListaOrdenada.TabIndex = 84;
             // 
             // BtnGenerarLista
             // 
-            this.BtnGenerarLista.Location = new System.Drawing.Point(28, 182);
+            this.BtnGenerarLista.BackColor = System.Drawing.Color.DarkBlue;
+            this.BtnGenerarLista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGenerarLista.ForeColor = System.Drawing.Color.White;
+            this.BtnGenerarLista.Location = new System.Drawing.Point(95, 134);
             this.BtnGenerarLista.Name = "BtnGenerarLista";
-            this.BtnGenerarLista.Size = new System.Drawing.Size(290, 20);
+            this.BtnGenerarLista.Size = new System.Drawing.Size(133, 41);
             this.BtnGenerarLista.TabIndex = 83;
             this.BtnGenerarLista.Text = "Generar lista";
-            this.BtnGenerarLista.UseVisualStyleBackColor = true;
+            this.BtnGenerarLista.UseVisualStyleBackColor = false;
             this.BtnGenerarLista.Click += new System.EventHandler(this.BtnGenerarLista_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label3.Location = new System.Drawing.Point(65, 129);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(29, 90);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(199, 24);
+            this.label3.Size = new System.Drawing.Size(123, 13);
             this.label3.TabIndex = 82;
             this.label3.Text = "Numero de elementos";
             // 
@@ -126,7 +133,7 @@
             // 
             // TxtNumeroElementos
             // 
-            this.TxtNumeroElementos.Location = new System.Drawing.Point(28, 156);
+            this.TxtNumeroElementos.Location = new System.Drawing.Point(28, 106);
             this.TxtNumeroElementos.Name = "TxtNumeroElementos";
             this.TxtNumeroElementos.Size = new System.Drawing.Size(290, 20);
             this.TxtNumeroElementos.TabIndex = 79;

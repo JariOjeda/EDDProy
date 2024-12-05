@@ -39,5 +39,10 @@ namespace EDDemo.Algoritmos_de_recursividad
                 MessageBox.Show("Por favor, ingresa números enteros válidos y no negativos.");
             }
         }
+
+        private void frmCalculoExponente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

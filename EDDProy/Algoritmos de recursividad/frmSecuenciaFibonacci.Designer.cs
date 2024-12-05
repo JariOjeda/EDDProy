@@ -40,7 +40,7 @@
             // textBoxResultadoFib
             // 
             this.textBoxResultadoFib.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxResultadoFib.Location = new System.Drawing.Point(35, 319);
+            this.textBoxResultadoFib.Location = new System.Drawing.Point(27, 281);
             this.textBoxResultadoFib.Name = "textBoxResultadoFib";
             this.textBoxResultadoFib.Size = new System.Drawing.Size(730, 25);
             this.textBoxResultadoFib.TabIndex = 27;
@@ -56,10 +56,12 @@
             // 
             // btEnterFib
             // 
-            this.btEnterFib.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btEnterFib.BackColor = System.Drawing.Color.DarkBlue;
             this.btEnterFib.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btEnterFib.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btEnterFib.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEnterFib.Location = new System.Drawing.Point(351, 272);
+            this.btEnterFib.ForeColor = System.Drawing.Color.White;
+            this.btEnterFib.Location = new System.Drawing.Point(350, 216);
             this.btEnterFib.Name = "btEnterFib";
             this.btEnterFib.Size = new System.Drawing.Size(75, 34);
             this.btEnterFib.TabIndex = 25;
@@ -71,7 +73,7 @@
             // 
             this.labelPedirNumFib.AutoSize = true;
             this.labelPedirNumFib.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPedirNumFib.Location = new System.Drawing.Point(321, 222);
+            this.labelPedirNumFib.Location = new System.Drawing.Point(23, 144);
             this.labelPedirNumFib.Name = "labelPedirNumFib";
             this.labelPedirNumFib.Size = new System.Drawing.Size(135, 21);
             this.labelPedirNumFib.TabIndex = 24;
@@ -79,7 +81,7 @@
             // 
             // txtboxEscribirFib
             // 
-            this.txtboxEscribirFib.Location = new System.Drawing.Point(320, 246);
+            this.txtboxEscribirFib.Location = new System.Drawing.Point(22, 168);
             this.txtboxEscribirFib.Name = "txtboxEscribirFib";
             this.txtboxEscribirFib.Size = new System.Drawing.Size(136, 20);
             this.txtboxEscribirFib.TabIndex = 23;
@@ -87,18 +89,19 @@
             // labelDescripcionFib
             // 
             this.labelDescripcionFib.AutoSize = true;
-            this.labelDescripcionFib.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDescripcionFib.Location = new System.Drawing.Point(54, 173);
+            this.labelDescripcionFib.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDescripcionFib.Location = new System.Drawing.Point(18, 54);
             this.labelDescripcionFib.Name = "labelDescripcionFib";
-            this.labelDescripcionFib.Size = new System.Drawing.Size(674, 25);
+            this.labelDescripcionFib.Size = new System.Drawing.Size(399, 21);
             this.labelDescripcionFib.TabIndex = 22;
-            this.labelDescripcionFib.Text = "Este algortimo te da la secuencia de Fibonacci hasta el numero que le indiques";
+            this.labelDescripcionFib.Text = "Dará la secuencia de Fibonacci hasta el numero indicado";
             // 
             // TituloFibonacci
             // 
             this.TituloFibonacci.AutoSize = true;
             this.TituloFibonacci.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TituloFibonacci.Location = new System.Drawing.Point(220, 107);
+            this.TituloFibonacci.ForeColor = System.Drawing.Color.DarkBlue;
+            this.TituloFibonacci.Location = new System.Drawing.Point(12, 9);
             this.TituloFibonacci.Name = "TituloFibonacci";
             this.TituloFibonacci.Size = new System.Drawing.Size(362, 45);
             this.TituloFibonacci.TabIndex = 21;

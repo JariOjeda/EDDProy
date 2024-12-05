@@ -40,7 +40,7 @@
             // textBoxResultadoFact
             // 
             this.textBoxResultadoFact.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxResultadoFact.Location = new System.Drawing.Point(27, 314);
+            this.textBoxResultadoFact.Location = new System.Drawing.Point(22, 261);
             this.textBoxResultadoFact.Name = "textBoxResultadoFact";
             this.textBoxResultadoFact.Size = new System.Drawing.Size(747, 25);
             this.textBoxResultadoFact.TabIndex = 28;
@@ -56,10 +56,12 @@
             // 
             // EntrarFactorial
             // 
-            this.EntrarFactorial.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.EntrarFactorial.BackColor = System.Drawing.Color.DarkBlue;
             this.EntrarFactorial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.EntrarFactorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EntrarFactorial.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EntrarFactorial.Location = new System.Drawing.Point(347, 274);
+            this.EntrarFactorial.ForeColor = System.Drawing.Color.White;
+            this.EntrarFactorial.Location = new System.Drawing.Point(346, 197);
             this.EntrarFactorial.Name = "EntrarFactorial";
             this.EntrarFactorial.Size = new System.Drawing.Size(75, 34);
             this.EntrarFactorial.TabIndex = 26;
@@ -71,7 +73,7 @@
             // 
             this.labelPedirNumFact.AutoSize = true;
             this.labelPedirNumFact.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPedirNumFact.Location = new System.Drawing.Point(317, 224);
+            this.labelPedirNumFact.Location = new System.Drawing.Point(28, 127);
             this.labelPedirNumFact.Name = "labelPedirNumFact";
             this.labelPedirNumFact.Size = new System.Drawing.Size(135, 21);
             this.labelPedirNumFact.TabIndex = 25;
@@ -79,7 +81,7 @@
             // 
             // CuadroTxtFact
             // 
-            this.CuadroTxtFact.Location = new System.Drawing.Point(316, 248);
+            this.CuadroTxtFact.Location = new System.Drawing.Point(27, 151);
             this.CuadroTxtFact.Name = "CuadroTxtFact";
             this.CuadroTxtFact.Size = new System.Drawing.Size(136, 20);
             this.CuadroTxtFact.TabIndex = 24;
@@ -87,18 +89,19 @@
             // labelDescripcionFact
             // 
             this.labelDescripcionFact.AutoSize = true;
-            this.labelDescripcionFact.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDescripcionFact.Location = new System.Drawing.Point(204, 182);
+            this.labelDescripcionFact.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDescripcionFact.Location = new System.Drawing.Point(18, 54);
             this.labelDescripcionFact.Name = "labelDescripcionFact";
-            this.labelDescripcionFact.Size = new System.Drawing.Size(398, 25);
+            this.labelDescripcionFact.Size = new System.Drawing.Size(221, 21);
             this.labelDescripcionFact.TabIndex = 23;
-            this.labelDescripcionFact.Text = "Este algortimo te da el factorial de un numero";
+            this.labelDescripcionFact.Text = "Dará el factorial de un número";
             // 
             // TituloFact
             // 
             this.TituloFact.AutoSize = true;
             this.TituloFact.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TituloFact.Location = new System.Drawing.Point(216, 109);
+            this.TituloFact.ForeColor = System.Drawing.Color.DarkBlue;
+            this.TituloFact.Location = new System.Drawing.Point(12, 9);
             this.TituloFact.Name = "TituloFact";
             this.TituloFact.Size = new System.Drawing.Size(367, 45);
             this.TituloFact.TabIndex = 22;

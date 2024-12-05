@@ -44,7 +44,7 @@ namespace EDDemo
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(176, 380);
+            this.label2.Location = new System.Drawing.Point(404, 402);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 40;
@@ -52,16 +52,16 @@ namespace EDDemo
             // 
             // TxInfo
             // 
-            this.TxInfo.Location = new System.Drawing.Point(51, 396);
+            this.TxInfo.Location = new System.Drawing.Point(407, 418);
             this.TxInfo.Multiline = true;
             this.TxInfo.Name = "TxInfo";
-            this.TxInfo.Size = new System.Drawing.Size(326, 44);
+            this.TxInfo.Size = new System.Drawing.Size(292, 62);
             this.TxInfo.TabIndex = 39;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(176, 166);
+            this.label1.Location = new System.Drawing.Point(554, 137);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 13);
             this.label1.TabIndex = 38;
@@ -71,7 +71,7 @@ namespace EDDemo
             // 
             this.Titulo.AutoSize = true;
             this.Titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Titulo.Location = new System.Drawing.Point(561, 61);
+            this.Titulo.Location = new System.Drawing.Point(175, 55);
             this.Titulo.Name = "Titulo";
             this.Titulo.Size = new System.Drawing.Size(61, 25);
             this.Titulo.TabIndex = 37;
@@ -79,58 +79,70 @@ namespace EDDemo
             // 
             // TxInPut
             // 
-            this.TxInPut.Location = new System.Drawing.Point(51, 199);
+            this.TxInPut.Location = new System.Drawing.Point(429, 170);
             this.TxInPut.Name = "TxInPut";
             this.TxInPut.Size = new System.Drawing.Size(326, 20);
             this.TxInPut.TabIndex = 36;
             // 
             // BtEliminar
             // 
-            this.BtEliminar.Location = new System.Drawing.Point(302, 255);
+            this.BtEliminar.BackColor = System.Drawing.Color.DarkBlue;
+            this.BtEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtEliminar.ForeColor = System.Drawing.Color.White;
+            this.BtEliminar.Location = new System.Drawing.Point(544, 252);
             this.BtEliminar.Name = "BtEliminar";
-            this.BtEliminar.Size = new System.Drawing.Size(75, 23);
+            this.BtEliminar.Size = new System.Drawing.Size(91, 38);
             this.BtEliminar.TabIndex = 35;
             this.BtEliminar.Text = "Pop";
-            this.BtEliminar.UseVisualStyleBackColor = true;
+            this.BtEliminar.UseVisualStyleBackColor = false;
             this.BtEliminar.Click += new System.EventHandler(this.BtEliminar_Click);
             // 
             // BtBuscar
             // 
-            this.BtBuscar.Location = new System.Drawing.Point(179, 255);
+            this.BtBuscar.BackColor = System.Drawing.Color.DarkBlue;
+            this.BtBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtBuscar.ForeColor = System.Drawing.Color.White;
+            this.BtBuscar.Location = new System.Drawing.Point(544, 306);
             this.BtBuscar.Name = "BtBuscar";
-            this.BtBuscar.Size = new System.Drawing.Size(75, 23);
+            this.BtBuscar.Size = new System.Drawing.Size(91, 38);
             this.BtBuscar.TabIndex = 34;
             this.BtBuscar.Text = "Buscar";
-            this.BtBuscar.UseVisualStyleBackColor = true;
+            this.BtBuscar.UseVisualStyleBackColor = false;
             this.BtBuscar.Click += new System.EventHandler(this.BtBuscar_Click);
             // 
             // BtAñadir
             // 
-            this.BtAñadir.Location = new System.Drawing.Point(51, 255);
+            this.BtAñadir.BackColor = System.Drawing.Color.DarkBlue;
+            this.BtAñadir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtAñadir.ForeColor = System.Drawing.Color.White;
+            this.BtAñadir.Location = new System.Drawing.Point(544, 196);
             this.BtAñadir.Name = "BtAñadir";
-            this.BtAñadir.Size = new System.Drawing.Size(75, 23);
+            this.BtAñadir.Size = new System.Drawing.Size(91, 38);
             this.BtAñadir.TabIndex = 33;
             this.BtAñadir.Text = "Push";
-            this.BtAñadir.UseVisualStyleBackColor = true;
+            this.BtAñadir.UseVisualStyleBackColor = false;
             this.BtAñadir.Click += new System.EventHandler(this.BtAñadir_Click);
             // 
             // TxResultado
             // 
-            this.TxResultado.Location = new System.Drawing.Point(397, 91);
+            this.TxResultado.Location = new System.Drawing.Point(33, 100);
             this.TxResultado.Multiline = true;
             this.TxResultado.Name = "TxResultado";
-            this.TxResultado.Size = new System.Drawing.Size(385, 349);
+            this.TxResultado.Size = new System.Drawing.Size(345, 380);
             this.TxResultado.TabIndex = 32;
             // 
             // BtPilaVaciar
             // 
-            this.BtPilaVaciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtPilaVaciar.Location = new System.Drawing.Point(29, 61);
+            this.BtPilaVaciar.BackColor = System.Drawing.Color.DarkBlue;
+            this.BtPilaVaciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtPilaVaciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtPilaVaciar.ForeColor = System.Drawing.Color.White;
+            this.BtPilaVaciar.Location = new System.Drawing.Point(724, 432);
             this.BtPilaVaciar.Name = "BtPilaVaciar";
-            this.BtPilaVaciar.Size = new System.Drawing.Size(97, 48);
+            this.BtPilaVaciar.Size = new System.Drawing.Size(70, 36);
             this.BtPilaVaciar.TabIndex = 31;
             this.BtPilaVaciar.Text = "Vaciar";
-            this.BtPilaVaciar.UseVisualStyleBackColor = true;
+            this.BtPilaVaciar.UseVisualStyleBackColor = false;
             this.BtPilaVaciar.Click += new System.EventHandler(this.BtPilaVaciar_Click);
             // 
             // frmPilas

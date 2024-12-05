@@ -43,16 +43,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(333, 29);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 31);
+            this.label1.Size = new System.Drawing.Size(119, 45);
             this.label1.TabIndex = 76;
             this.label1.Text = "RADIX";
             // 
             // txtTiempo
             // 
-            this.txtTiempo.Location = new System.Drawing.Point(390, 401);
+            this.txtTiempo.Location = new System.Drawing.Point(420, 401);
             this.txtTiempo.Name = "txtTiempo";
             this.txtTiempo.ReadOnly = true;
             this.txtTiempo.Size = new System.Drawing.Size(78, 20);
@@ -60,19 +61,22 @@
             // 
             // BtnOrdenarLista
             // 
-            this.BtnOrdenarLista.Location = new System.Drawing.Point(390, 177);
+            this.BtnOrdenarLista.BackColor = System.Drawing.Color.DarkBlue;
+            this.BtnOrdenarLista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnOrdenarLista.ForeColor = System.Drawing.Color.White;
+            this.BtnOrdenarLista.Location = new System.Drawing.Point(497, 95);
             this.BtnOrdenarLista.Name = "BtnOrdenarLista";
-            this.BtnOrdenarLista.Size = new System.Drawing.Size(360, 20);
+            this.BtnOrdenarLista.Size = new System.Drawing.Size(146, 44);
             this.BtnOrdenarLista.TabIndex = 74;
             this.BtnOrdenarLista.Text = "Ordenar";
-            this.BtnOrdenarLista.UseVisualStyleBackColor = true;
+            this.BtnOrdenarLista.UseVisualStyleBackColor = false;
             this.BtnOrdenarLista.Click += new System.EventHandler(this.BtnOrdenarLista_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label6.Location = new System.Drawing.Point(507, 200);
+            this.label6.Location = new System.Drawing.Point(510, 162);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(133, 24);
             this.label6.TabIndex = 73;
@@ -80,29 +84,32 @@
             // 
             // TxtListaOrdenada
             // 
-            this.TxtListaOrdenada.Location = new System.Drawing.Point(390, 227);
+            this.TxtListaOrdenada.Location = new System.Drawing.Point(420, 189);
             this.TxtListaOrdenada.Multiline = true;
             this.TxtListaOrdenada.Name = "TxtListaOrdenada";
-            this.TxtListaOrdenada.Size = new System.Drawing.Size(360, 156);
+            this.TxtListaOrdenada.Size = new System.Drawing.Size(318, 193);
             this.TxtListaOrdenada.TabIndex = 72;
             // 
             // BtnGenerarLista
             // 
-            this.BtnGenerarLista.Location = new System.Drawing.Point(50, 200);
+            this.BtnGenerarLista.BackColor = System.Drawing.Color.DarkBlue;
+            this.BtnGenerarLista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGenerarLista.ForeColor = System.Drawing.Color.White;
+            this.BtnGenerarLista.Location = new System.Drawing.Point(99, 162);
             this.BtnGenerarLista.Name = "BtnGenerarLista";
-            this.BtnGenerarLista.Size = new System.Drawing.Size(249, 20);
+            this.BtnGenerarLista.Size = new System.Drawing.Size(146, 44);
             this.BtnGenerarLista.TabIndex = 71;
             this.BtnGenerarLista.Text = "Generar lista";
-            this.BtnGenerarLista.UseVisualStyleBackColor = true;
+            this.BtnGenerarLista.UseVisualStyleBackColor = false;
             this.BtnGenerarLista.Click += new System.EventHandler(this.BtnGenerarLista_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label3.Location = new System.Drawing.Point(73, 147);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(47, 111);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(199, 24);
+            this.label3.Size = new System.Drawing.Size(123, 13);
             this.label3.TabIndex = 70;
             this.label3.Text = "Numero de elementos";
             // 
@@ -110,7 +117,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label2.Location = new System.Drawing.Point(149, 223);
+            this.label2.Location = new System.Drawing.Point(155, 222);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 24);
             this.label2.TabIndex = 69;
@@ -121,12 +128,12 @@
             this.TxtLista.Location = new System.Drawing.Point(50, 250);
             this.TxtLista.Multiline = true;
             this.TxtLista.Name = "TxtLista";
-            this.TxtLista.Size = new System.Drawing.Size(249, 133);
+            this.TxtLista.Size = new System.Drawing.Size(249, 171);
             this.TxtLista.TabIndex = 68;
             // 
             // TxtNumeroElementos
             // 
-            this.TxtNumeroElementos.Location = new System.Drawing.Point(50, 174);
+            this.TxtNumeroElementos.Location = new System.Drawing.Point(50, 136);
             this.TxtNumeroElementos.Name = "TxtNumeroElementos";
             this.TxtNumeroElementos.Size = new System.Drawing.Size(249, 20);
             this.TxtNumeroElementos.TabIndex = 67;

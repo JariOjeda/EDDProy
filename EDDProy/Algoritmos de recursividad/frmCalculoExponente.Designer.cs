@@ -43,7 +43,7 @@
             // 
             this.LabelPedirExponente.AutoSize = true;
             this.LabelPedirExponente.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelPedirExponente.Location = new System.Drawing.Point(431, 222);
+            this.LabelPedirExponente.Location = new System.Drawing.Point(19, 178);
             this.LabelPedirExponente.Name = "LabelPedirExponente";
             this.LabelPedirExponente.Size = new System.Drawing.Size(157, 21);
             this.LabelPedirExponente.TabIndex = 35;
@@ -51,15 +51,15 @@
             // 
             // ExcribirExponenteTxtBox
             // 
-            this.ExcribirExponenteTxtBox.Location = new System.Drawing.Point(442, 246);
+            this.ExcribirExponenteTxtBox.Location = new System.Drawing.Point(23, 202);
             this.ExcribirExponenteTxtBox.Name = "ExcribirExponenteTxtBox";
-            this.ExcribirExponenteTxtBox.Size = new System.Drawing.Size(136, 20);
+            this.ExcribirExponenteTxtBox.Size = new System.Drawing.Size(153, 20);
             this.ExcribirExponenteTxtBox.TabIndex = 34;
             // 
             // ResultadoExpoTxtBox
             // 
             this.ResultadoExpoTxtBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResultadoExpoTxtBox.Location = new System.Drawing.Point(55, 319);
+            this.ResultadoExpoTxtBox.Location = new System.Drawing.Point(69, 304);
             this.ResultadoExpoTxtBox.Name = "ResultadoExpoTxtBox";
             this.ResultadoExpoTxtBox.Size = new System.Drawing.Size(691, 25);
             this.ResultadoExpoTxtBox.TabIndex = 33;
@@ -75,10 +75,12 @@
             // 
             // EntrarBoton
             // 
-            this.EntrarBoton.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.EntrarBoton.BackColor = System.Drawing.Color.DarkBlue;
             this.EntrarBoton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.EntrarBoton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EntrarBoton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EntrarBoton.Location = new System.Drawing.Point(357, 272);
+            this.EntrarBoton.ForeColor = System.Drawing.Color.White;
+            this.EntrarBoton.Location = new System.Drawing.Point(356, 240);
             this.EntrarBoton.Name = "EntrarBoton";
             this.EntrarBoton.Size = new System.Drawing.Size(75, 34);
             this.EntrarBoton.TabIndex = 31;
@@ -90,7 +92,7 @@
             // 
             this.LabelPedirBase.AutoSize = true;
             this.LabelPedirBase.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelPedirBase.Location = new System.Drawing.Point(207, 222);
+            this.LabelPedirBase.Location = new System.Drawing.Point(19, 115);
             this.LabelPedirBase.Name = "LabelPedirBase";
             this.LabelPedirBase.Size = new System.Drawing.Size(120, 21);
             this.LabelPedirBase.TabIndex = 30;
@@ -98,26 +100,27 @@
             // 
             // EscribirBaseTxtBox
             // 
-            this.EscribirBaseTxtBox.Location = new System.Drawing.Point(199, 246);
+            this.EscribirBaseTxtBox.Location = new System.Drawing.Point(23, 139);
             this.EscribirBaseTxtBox.Name = "EscribirBaseTxtBox";
-            this.EscribirBaseTxtBox.Size = new System.Drawing.Size(136, 20);
+            this.EscribirBaseTxtBox.Size = new System.Drawing.Size(153, 20);
             this.EscribirBaseTxtBox.TabIndex = 29;
             // 
             // labelDescripcionExpo
             // 
             this.labelDescripcionExpo.AutoSize = true;
-            this.labelDescripcionExpo.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDescripcionExpo.Location = new System.Drawing.Point(74, 173);
+            this.labelDescripcionExpo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDescripcionExpo.Location = new System.Drawing.Point(19, 54);
             this.labelDescripcionExpo.Name = "labelDescripcionExpo";
-            this.labelDescripcionExpo.Size = new System.Drawing.Size(660, 25);
+            this.labelDescripcionExpo.Size = new System.Drawing.Size(468, 21);
             this.labelDescripcionExpo.TabIndex = 28;
-            this.labelDescripcionExpo.Text = "Este algortimo calcula el exponente de un numero dado a una potencia dada";
+            this.labelDescripcionExpo.Text = "Se calculará el exponente de un número dado a una potencia dada";
             // 
             // LabelTituloExpo
             // 
             this.LabelTituloExpo.AutoSize = true;
             this.LabelTituloExpo.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTituloExpo.Location = new System.Drawing.Point(226, 107);
+            this.LabelTituloExpo.ForeColor = System.Drawing.Color.DarkBlue;
+            this.LabelTituloExpo.Location = new System.Drawing.Point(12, 9);
             this.LabelTituloExpo.Name = "LabelTituloExpo";
             this.LabelTituloExpo.Size = new System.Drawing.Size(398, 45);
             this.LabelTituloExpo.TabIndex = 27;
@@ -139,6 +142,7 @@
             this.Controls.Add(this.LabelTituloExpo);
             this.Name = "frmCalculoExponente";
             this.Text = "frmCalculoExponente";
+            this.Load += new System.EventHandler(this.frmCalculoExponente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

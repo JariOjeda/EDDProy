@@ -40,7 +40,7 @@
             // ResultadoArregloTxtBox
             // 
             this.ResultadoArregloTxtBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResultadoArregloTxtBox.Location = new System.Drawing.Point(33, 322);
+            this.ResultadoArregloTxtBox.Location = new System.Drawing.Point(22, 294);
             this.ResultadoArregloTxtBox.Name = "ResultadoArregloTxtBox";
             this.ResultadoArregloTxtBox.Size = new System.Drawing.Size(734, 25);
             this.ResultadoArregloTxtBox.TabIndex = 27;
@@ -56,10 +56,12 @@
             // 
             // btEntrarArreglo
             // 
-            this.btEntrarArreglo.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btEntrarArreglo.BackColor = System.Drawing.Color.DarkBlue;
             this.btEntrarArreglo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btEntrarArreglo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btEntrarArreglo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEntrarArreglo.Location = new System.Drawing.Point(347, 275);
+            this.btEntrarArreglo.ForeColor = System.Drawing.Color.White;
+            this.btEntrarArreglo.Location = new System.Drawing.Point(346, 220);
             this.btEntrarArreglo.Name = "btEntrarArreglo";
             this.btEntrarArreglo.Size = new System.Drawing.Size(75, 34);
             this.btEntrarArreglo.TabIndex = 25;
@@ -71,34 +73,35 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(138, 220);
+            this.label3.Location = new System.Drawing.Point(18, 138);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(491, 21);
+            this.label3.Size = new System.Drawing.Size(568, 21);
             this.label3.TabIndex = 24;
-            this.label3.Text = "Dame los elementos del arreglo, separados por una coma (1,2,...,n)";
+            this.label3.Text = "Dame los elementos del arreglo, deben ser separados por una coma (1,2,...,n)";
             // 
             // txtboxArregloEscribir
             // 
-            this.txtboxArregloEscribir.Location = new System.Drawing.Point(316, 249);
+            this.txtboxArregloEscribir.Location = new System.Drawing.Point(20, 172);
             this.txtboxArregloEscribir.Name = "txtboxArregloEscribir";
-            this.txtboxArregloEscribir.Size = new System.Drawing.Size(136, 20);
+            this.txtboxArregloEscribir.Size = new System.Drawing.Size(251, 20);
             this.txtboxArregloEscribir.TabIndex = 23;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(137, 158);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(18, 54);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(496, 25);
+            this.label4.Size = new System.Drawing.Size(349, 21);
             this.label4.TabIndex = 22;
-            this.label4.Text = "Este algortimo suma los elementos dados para un arreglo";
+            this.label4.Text = "Se sumaran los elementos dados para un arreglo";
             // 
             // TituloArreglo
             // 
             this.TituloArreglo.AutoSize = true;
             this.TituloArreglo.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TituloArreglo.Location = new System.Drawing.Point(106, 103);
+            this.TituloArreglo.ForeColor = System.Drawing.Color.DarkBlue;
+            this.TituloArreglo.Location = new System.Drawing.Point(12, 9);
             this.TituloArreglo.Name = "TituloArreglo";
             this.TituloArreglo.Size = new System.Drawing.Size(542, 45);
             this.TituloArreglo.TabIndex = 21;

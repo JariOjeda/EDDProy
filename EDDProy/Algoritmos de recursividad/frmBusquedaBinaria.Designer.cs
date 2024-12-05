@@ -46,6 +46,7 @@
             this.TituloBusquedaBinaria.BackColor = System.Drawing.SystemColors.Control;
             this.TituloBusquedaBinaria.Cursor = System.Windows.Forms.Cursors.Default;
             this.TituloBusquedaBinaria.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TituloBusquedaBinaria.ForeColor = System.Drawing.Color.DarkBlue;
             this.TituloBusquedaBinaria.Location = new System.Drawing.Point(12, 9);
             this.TituloBusquedaBinaria.Name = "TituloBusquedaBinaria";
             this.TituloBusquedaBinaria.Size = new System.Drawing.Size(281, 45);
@@ -55,17 +56,19 @@
             // ResultadoIndicesTxtBox
             // 
             this.ResultadoIndicesTxtBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResultadoIndicesTxtBox.Location = new System.Drawing.Point(434, 261);
+            this.ResultadoIndicesTxtBox.Location = new System.Drawing.Point(175, 308);
             this.ResultadoIndicesTxtBox.Name = "ResultadoIndicesTxtBox";
             this.ResultadoIndicesTxtBox.Size = new System.Drawing.Size(332, 25);
             this.ResultadoIndicesTxtBox.TabIndex = 48;
             // 
             // btBuscarEnArreglo
             // 
-            this.btBuscarEnArreglo.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btBuscarEnArreglo.BackColor = System.Drawing.Color.DarkBlue;
             this.btBuscarEnArreglo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btBuscarEnArreglo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btBuscarEnArreglo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btBuscarEnArreglo.Location = new System.Drawing.Point(507, 214);
+            this.btBuscarEnArreglo.ForeColor = System.Drawing.Color.White;
+            this.btBuscarEnArreglo.Location = new System.Drawing.Point(19, 308);
             this.btBuscarEnArreglo.Name = "btBuscarEnArreglo";
             this.btBuscarEnArreglo.Size = new System.Drawing.Size(136, 34);
             this.btBuscarEnArreglo.TabIndex = 47;
@@ -77,15 +80,15 @@
             // 
             this.PedirNumeroBusquedaBinaria.AutoSize = true;
             this.PedirNumeroBusquedaBinaria.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PedirNumeroBusquedaBinaria.Location = new System.Drawing.Point(432, 164);
+            this.PedirNumeroBusquedaBinaria.Location = new System.Drawing.Point(15, 248);
             this.PedirNumeroBusquedaBinaria.Name = "PedirNumeroBusquedaBinaria";
-            this.PedirNumeroBusquedaBinaria.Size = new System.Drawing.Size(301, 21);
+            this.PedirNumeroBusquedaBinaria.Size = new System.Drawing.Size(395, 21);
             this.PedirNumeroBusquedaBinaria.TabIndex = 46;
-            this.PedirNumeroBusquedaBinaria.Text = "Que numero del 1 al 1000 quieres buscar";
+            this.PedirNumeroBusquedaBinaria.Text = "Selecciona un numero del 1 al 1000 que quieras bucar";
             // 
             // PedirNumeroBusquedaTxtBox
             // 
-            this.PedirNumeroBusquedaTxtBox.Location = new System.Drawing.Point(507, 188);
+            this.PedirNumeroBusquedaTxtBox.Location = new System.Drawing.Point(19, 272);
             this.PedirNumeroBusquedaTxtBox.Name = "PedirNumeroBusquedaTxtBox";
             this.PedirNumeroBusquedaTxtBox.Size = new System.Drawing.Size(136, 20);
             this.PedirNumeroBusquedaTxtBox.TabIndex = 45;
@@ -93,17 +96,19 @@
             // ResultadoGenerarArregloTxtBox
             // 
             this.ResultadoGenerarArregloTxtBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResultadoGenerarArregloTxtBox.Location = new System.Drawing.Point(39, 261);
+            this.ResultadoGenerarArregloTxtBox.Location = new System.Drawing.Point(175, 182);
             this.ResultadoGenerarArregloTxtBox.Name = "ResultadoGenerarArregloTxtBox";
-            this.ResultadoGenerarArregloTxtBox.Size = new System.Drawing.Size(336, 25);
+            this.ResultadoGenerarArregloTxtBox.Size = new System.Drawing.Size(332, 25);
             this.ResultadoGenerarArregloTxtBox.TabIndex = 44;
             // 
             // btGenerarArreglo
             // 
-            this.btGenerarArreglo.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btGenerarArreglo.BackColor = System.Drawing.Color.DarkBlue;
             this.btGenerarArreglo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btGenerarArreglo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btGenerarArreglo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btGenerarArreglo.Location = new System.Drawing.Point(124, 214);
+            this.btGenerarArreglo.ForeColor = System.Drawing.Color.White;
+            this.btGenerarArreglo.Location = new System.Drawing.Point(19, 175);
             this.btGenerarArreglo.Name = "btGenerarArreglo";
             this.btGenerarArreglo.Size = new System.Drawing.Size(136, 34);
             this.btGenerarArreglo.TabIndex = 43;
@@ -115,15 +120,15 @@
             // 
             this.PedirElementosBusquedaBinaria.AutoSize = true;
             this.PedirElementosBusquedaBinaria.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PedirElementosBusquedaBinaria.Location = new System.Drawing.Point(35, 164);
+            this.PedirElementosBusquedaBinaria.Location = new System.Drawing.Point(15, 118);
             this.PedirElementosBusquedaBinaria.Name = "PedirElementosBusquedaBinaria";
-            this.PedirElementosBusquedaBinaria.Size = new System.Drawing.Size(318, 21);
+            this.PedirElementosBusquedaBinaria.Size = new System.Drawing.Size(328, 21);
             this.PedirElementosBusquedaBinaria.TabIndex = 42;
-            this.PedirElementosBusquedaBinaria.Text = "Dame el numero de elementos del arreglo";
+            this.PedirElementosBusquedaBinaria.Text = "Escribe el numero de elementos del arreglo";
             // 
             // EscribirNumElementosBusquedaTxtBox
             // 
-            this.EscribirNumElementosBusquedaTxtBox.Location = new System.Drawing.Point(124, 188);
+            this.EscribirNumElementosBusquedaTxtBox.Location = new System.Drawing.Point(19, 142);
             this.EscribirNumElementosBusquedaTxtBox.Name = "EscribirNumElementosBusquedaTxtBox";
             this.EscribirNumElementosBusquedaTxtBox.Size = new System.Drawing.Size(136, 20);
             this.EscribirNumElementosBusquedaTxtBox.TabIndex = 41;
@@ -131,7 +136,7 @@
             // LblTiempo
             // 
             this.LblTiempo.AutoSize = true;
-            this.LblTiempo.Location = new System.Drawing.Point(174, 356);
+            this.LblTiempo.Location = new System.Drawing.Point(36, 411);
             this.LblTiempo.Name = "LblTiempo";
             this.LblTiempo.Size = new System.Drawing.Size(42, 13);
             this.LblTiempo.TabIndex = 49;
