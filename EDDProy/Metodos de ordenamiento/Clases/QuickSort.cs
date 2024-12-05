@@ -7,51 +7,60 @@ using EDDemo.Estructuras_Lineales.Clases;
 
 namespace EDDemo.Metodos_de_ordenamiento.Clases
 {
-    public class ShellSort
+    public class QuickSort
     {
-        public static void FuncionShellSort(ListaSimple lista)
+        // Método principal que adapta Quicksort para ListaSimple
+        public static void FuncionQuicksort(ListaSimple lista)
         {
             if (lista.estaVacio()) return;
 
             // Convertir la lista a un arreglo
-            int[] valores = ConvertirListaAArreglo(lista);
+            int[] arreglo = ConvertirListaAArreglo(lista);
 
-            // Aplicar el algoritmo Shellsort
-            Shellsort(valores);
+            // Aplicar Quicksort al arreglo
+            QuicksortRecursivo(arreglo, 0, arreglo.Length - 1);
 
             // Reconstruir la lista con los elementos ordenados
-            ReconstruirListaDesdeArreglo(lista, valores);
+            ReconstruirListaDesdeArreglo(lista, arreglo);
         }
 
-        // Implementación del algoritmo Shellsort
-        private static void Shellsort(int[] valores)
+        // Función recursiva de Quicksort
+        private static void QuicksortRecursivo(int[] A, int inf, int sup)
         {
-            int n = valores.Length;
+            if (inf >= sup)
+                return;
 
-            // Inicializamos el gap
-            int gap = n / 2;
+            int i = inf;
+            int j = sup;
+            int pivote = A[(inf + sup) / 2]; // Elemento pivote
 
-            // Mientras el gap sea mayor a 0
-            while (gap > 0)
+            while (i <= j)
             {
-                for (int i = gap; i < n; i++)
+                // Buscar un elemento en la izquierda mayor que el pivote
+                while (A[i] < pivote)
+                    i++;
+
+                // Buscar un elemento en la derecha menor que el pivote
+                while (A[j] > pivote)
+                    j--;
+
+                // Si los índices no se han cruzado, intercambiar los elementos
+                if (i <= j)
                 {
-                    int temp = valores[i];
-                    int j = i;
-
-                    // Comparación e intercambio utilizando el gap
-                    while (j >= gap && valores[j - gap] > temp)
-                    {
-                        valores[j] = valores[j - gap];
-                        j -= gap;
-                    }
-
-                    valores[j] = temp;
+                    int temp = A[i];
+                    A[i] = A[j];
+                    A[j] = temp;
+                    i++;
+                    j--;
                 }
-
-                // Reducimos el gap
-                gap /= 2;
             }
+
+            // Llamadas recursivas para ordenar las sublistas
+            if (inf < j)
+                QuicksortRecursivo(A, inf, j);
+
+            if (i < sup)
+                QuicksortRecursivo(A, i, sup);
         }
 
         // Convertir una ListaSimple a un arreglo de enteros

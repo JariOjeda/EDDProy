@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using EDDemo.Estructuras_Lineales.Clases;
 
 namespace EDDemo.Metodos_de_ordenamiento.Clases
+{ 
 public class Intercalacion
 {
     public ListaSimple FuncionIntercalacion(ListaSimple lista1, ListaSimple lista2)

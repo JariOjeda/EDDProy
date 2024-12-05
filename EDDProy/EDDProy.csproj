@@ -160,6 +160,13 @@
       <DependentUpon>frmPilas.cs</DependentUpon>
     </Compile>
     <Compile Include="Graphviz.cs" />
+    <Compile Include="Metodos de busqueda\Clases\Hash.cs" />
+    <Compile Include="Metodos de busqueda\frmHash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de busqueda\frmHash.Designer.cs">
+      <DependentUpon>frmHash.cs</DependentUpon>
+    </Compile>
     <Compile Include="Metodos de ordenamiento\Clases\Burbuja.cs" />
     <Compile Include="Metodos de ordenamiento\Clases\Intercalacion.cs" />
     <Compile Include="Metodos de ordenamiento\Clases\MezclaDirecta.cs" />
@@ -256,6 +263,30 @@
     <EmbeddedResource Include="Estructuras Lineales\frmPilas.resx">
       <DependentUpon>frmPilas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de busqueda\frmHash.resx">
+      <DependentUpon>frmHash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de ordenamiento\frmBurbuja.resx">
+      <DependentUpon>frmBurbuja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de ordenamiento\frmIntercalacion.resx">
+      <DependentUpon>frmIntercalacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de ordenamiento\frmMezclaDirecta.resx">
+      <DependentUpon>frmMezclaDirecta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de ordenamiento\frmMezclaNatural.resx">
+      <DependentUpon>frmMezclaNatural.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de ordenamiento\frmQuickSort.resx">
+      <DependentUpon>frmQuickSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de ordenamiento\frmRadix.resx">
+      <DependentUpon>frmRadix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de ordenamiento\frmShellSort.resx">
+      <DependentUpon>frmShellSort.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -279,8 +310,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Metodos de busqueda\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
