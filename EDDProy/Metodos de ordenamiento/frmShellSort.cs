@@ -34,7 +34,7 @@ namespace EDDemo.Metodos_de_ordenamiento
                     lista.InsertarFinal(numero.ToString());
                 }
 
-                // Mostrar la lista generada en el TextBox
+                // MOSTRAR LISTA
                 TxtLista.Text = lista.ToString();
             }
             else
@@ -46,14 +46,14 @@ namespace EDDemo.Metodos_de_ordenamiento
         {
             ListaSimple lista = new ListaSimple();
 
-            // Dividir el texto usando "->", "," y espacios como separadores
+            // "->", "," Y ESPACIOS
             string[] valores = texto.Split(new string[] { "->", ",", " " }, StringSplitOptions.RemoveEmptyEntries);
 
             foreach (string valor in valores)
             {
                 string trimmedValue = valor.Trim();
 
-                // Ignorar específicamente el texto "null" y validar si el valor es un número entero
+                // VALIDAR EL VALOR ES UN NUMERO ENTERO
                 if (trimmedValue.Equals("null", StringComparison.OrdinalIgnoreCase))
                 {
                     continue; // Ignorar el texto "null"
@@ -65,7 +65,6 @@ namespace EDDemo.Metodos_de_ordenamiento
                 }
                 else
                 {
-                    // Solo mostrar advertencia si el valor no está vacío y no es "null"
                     if (!string.IsNullOrEmpty(trimmedValue))
                     {
                         MessageBox.Show($"El valor '{valor}' no es válido y será ignorado.",
@@ -81,7 +80,7 @@ namespace EDDemo.Metodos_de_ordenamiento
 
         private void BtnOrdenarLista_Click(object sender, EventArgs e)
         {
-            // Verificamos que haya datos en el cuadro de texto
+            // VERIFICAR QUE EXISTAN DATOS
             if (string.IsNullOrWhiteSpace(TxtLista.Text))
             {
                 MessageBox.Show("Por favor ingresa una lista de valores separados por comas.",
@@ -91,7 +90,7 @@ namespace EDDemo.Metodos_de_ordenamiento
                 return;
             }
 
-            // Convertimos el contenido de TxtLista a una ListaSimple
+            // CONVERTIR CONTENIDO TXT A LISTA SIMPLE
             ListaSimple lista = CrearListaDesdeTextBox(TxtLista.Text);
 
             if (lista.estaVacio())
@@ -103,20 +102,20 @@ namespace EDDemo.Metodos_de_ordenamiento
                 return;
             }
 
-            // Iniciar el cronómetro
+            // INICIAR CRONOMETRO
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
 
-            // Llamamos al algoritmo Radix para ordenar la ListaSimple
+            // LLAMADAS A RADIX PARA ORDENAR LISTA SIMPLE
             ShellSort.FuncionShellSort(lista);
 
-            // Detener el cronómetro
+            // DETENER  CRONOMETRO
             stopwatch.Stop();
 
-            // Mostrar la lista ordenada en TxtListaOrdenada
-            TxtListaOrdenada.Text = lista.ToString(); // ListaSimple debe implementar ToString correctamente
+            // MOSTRAR LISTA ORDENADA
+            TxtListaOrdenada.Text = lista.ToString(); // IMPLEMENTACION DE TOSTRING PARA LISTA SIMPLE
 
-            // Mostrar el tiempo de ejecución
+            // TIEMPO
             txtTiempo.Text = $"{stopwatch.ElapsedTicks} ticks";
         }
     }

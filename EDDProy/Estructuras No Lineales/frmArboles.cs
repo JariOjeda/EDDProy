@@ -32,11 +32,11 @@ namespace EDDemo.Estructuras_No_Lineales
                 bool insertado = miArbol.InsertarNodoRecursivo(valor);
                 if (insertado)
                 {
-                    //Obtenemos el nodo Raiz del arbol
+                    // OBTENER NODO RAIZ DEL ARBOL
                     miRaiz = miArbol.RegresaRaiz();
-                    //Limpiamos la cadena donde se concatenan los nodos del arbol 
+                    // LIMPIAR CADENA DONDE CONCATENAN LOS NODOS
                     miArbol.strArbol = "";
-                    //Leer arbol completo y mostrarlo en caja de texto
+                    // LEER ARBOL Y MOSTRAR 
                     miArbol.MuestraArbolAcostado(1, miRaiz);
                     txtArbol.Text = miArbol.strArbol;
                     MessageBox.Show("Nodo insertado correctamente.");
@@ -58,7 +58,7 @@ namespace EDDemo.Estructuras_No_Lineales
 
         private void btnCrearArbol_Click(object sender, EventArgs e)
         {
-            //Limpiamos los objetos y clases del anterior arbol
+            // LIMPIAR OBJETOS Y CLASES ANTERIORES
             miArbol = null;
             miRaiz = null;
             miArbol = new ArbolBusqueda();
@@ -72,14 +72,14 @@ namespace EDDemo.Estructuras_No_Lineales
             for (int nNodos = 1; nNodos <= txtNodos.Value; nNodos++)
             {
                 int Dato = rnd.Next(1, 100);
-                //Obtenemos el nodo Raiz del arbol
+                // OBTENER NODO RAIZ
                 miRaiz = miArbol.RegresaRaiz();
 
-                //Se inserta el nodo con el dato capturado
+                // INSERTAR NODO CON DATO CAPTURADO
                 miArbol.InsertaNodo(Dato, ref miRaiz);
             }
 
-            //Leer arbol completo y mostrarlo en caja de texto
+            // LEER ARBOL Y MOSTRARLO
             miArbol.MuestraArbolAcostado(1, miRaiz);
             txtArbol.Text = miArbol.strArbol;
 
@@ -88,8 +88,8 @@ namespace EDDemo.Estructuras_No_Lineales
 
         private void btnRecorrer_Click(object sender, EventArgs e)
         {
-            //Recorrido en PreOrden
-            //Obtenemos el nodo Raiz del arbol
+            // RECORRIDO PREORDEN
+            // OBTENER NODO RAIZ
             miRaiz = miArbol.RegresaRaiz();
             miArbol.strRecorrido = "";
 
@@ -104,8 +104,8 @@ namespace EDDemo.Estructuras_No_Lineales
             lblRecorridoPreOrden.Text = miArbol.strRecorrido;
 
 
-            //Recorrido en InOrden
-            //Obtenemos el nodo Raiz del arbol
+            // RECORRIDO INORDEN
+            // OBTENER NODO RAIZ
             miRaiz = miArbol.RegresaRaiz();
             miArbol.strRecorrido = "";
 
@@ -119,8 +119,8 @@ namespace EDDemo.Estructuras_No_Lineales
             lblRecorridoInOrden.Text = miArbol.strRecorrido;
 
 
-            //Recorrido en PostOrden
-            //Obtenemos el nodo Raiz del arbol
+            // RECORRIDO EN POSTORDEN
+            // OBTENER NODO RAIZ
             miRaiz = miArbol.RegresaRaiz();
             miArbol.strRecorrido = "";
 

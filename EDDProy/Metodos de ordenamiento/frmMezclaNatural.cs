@@ -26,7 +26,7 @@ namespace EDDemo.Metodos_de_ordenamiento
             int cantidad;
             if (int.TryParse(TxtNumeroElementos.Text, out cantidad) && cantidad > 0)
             {
-                lista = new ListaSimple(); // Reinicia la lista
+                lista = new ListaSimple(); // REINICIAR LISTA
                 Random random = new Random();
                 string listaTexto = "";
 

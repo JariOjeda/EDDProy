@@ -28,16 +28,16 @@ namespace EDDemo.Metodos_de_busqueda
             string producto = TxtProducto.Text.Trim();
             if (!string.IsNullOrEmpty(producto))
             {
-                int clave = Hash.FuncionHashPolinomial(producto, 100); // Generar clave hash
+                int clave = Hash.FuncionHashPolinomial(producto, 100); // GENERA CLAVE HASH
                 tablaHash.Insertar(clave, producto);
 
-                // Guardar clave y producto en el archivo
+                // GUARDAR CLAVE Y PRODUCTO EN ARCHIVO
                 using (StreamWriter writer = new StreamWriter(archivoHash, true))
                 {
                     writer.WriteLine($"{clave},{producto}");
                 }
 
-                // Mostrar en el TextBox
+                // MOSTRAR
                 TxtClaves.AppendText($"Clave: {clave} - Producto: {producto}\r\n");
             }
             else
@@ -50,7 +50,7 @@ namespace EDDemo.Metodos_de_busqueda
         {
             if (int.TryParse(TxtClaveABuscar.Text.Trim(), out int clave))
             {
-                // Iniciar el temporizador
+                // INICIAR TEMP
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.Start();
                 string resultado = tablaHash.Buscar(clave);
@@ -62,10 +62,10 @@ namespace EDDemo.Metodos_de_busqueda
                 {
                     TxtResultado.Text = "No se encontró ningún producto para esta clave.";
                 }
-                // Detener el temporizador
+                // DETENER TEMP
                 stopwatch.Stop();
 
-                // Mostrar el tiempo en ticks en el label
+                // MOSTRAR TIEMPO EN TICKS
                 LblTiempo.Text = $"Tiempo de búsqueda: {stopwatch.ElapsedTicks} ticks";
             }
             else
@@ -76,10 +76,10 @@ namespace EDDemo.Metodos_de_busqueda
 
         private void BtnLimpiar_Click(object sender, EventArgs e)
         {
-            tablaHash.VaciarTabla(); // Vaciar la tabla hash
-            File.WriteAllText(archivoHash, string.Empty); // Limpiar el archivo
-            TxtClaves.Clear(); // Limpiar el TextBox de claves
-            TxtResultado.Clear(); // Limpiar el TextBox de resultados
+            tablaHash.VaciarTabla(); // VACIAR TABLA
+            File.WriteAllText(archivoHash, string.Empty); // LIMPIAR
+            TxtClaves.Clear(); // LIMPIAR TEXT DE LAS CLAVES
+            TxtResultado.Clear(); // LIMPIAR RESULTADO
             MessageBox.Show("Tabla hash y archivo limpiados.");
         }
     }

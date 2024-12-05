@@ -20,13 +20,14 @@ namespace EDDemo
             InitializeComponent();
         }
 
+        //ACTUALIZA LISTA
         private void ActualizarPila()
         {
             var (recorrido, _) = pila.Recorrer();
-            TxResultado.Text = recorrido;  // Mostrar el contenido de la pila en el TextBox de resultados
+            TxResultado.Text = recorrido;  
         }
 
-        // Método para mostrar el tiempo y operaciones en el TextBox de información
+        // MOSTRAR TIEMPO DE EJECUCCION
         private void MostrarTiempoYOperaciones(Stopwatch stopwatch, int operaciones)
         {
             long tiempoMs = stopwatch.ElapsedMilliseconds;
@@ -36,16 +37,16 @@ namespace EDDemo
 
         private void BtAñadir_Click(object sender, EventArgs e)
         {
-            string dato = TxInPut.Text;  // Obtener el dato del TextBox
+            string dato = TxInPut.Text;  // OBTENER DATO
             if (!string.IsNullOrEmpty(dato))
             {
                 Stopwatch stopwatch = Stopwatch.StartNew();
-                int operaciones = pila.Push(dato);  // Añadir el dato a la pila
+                int operaciones = pila.Push(dato);  // AÑADIR A PILA
                 stopwatch.Stop();
 
                 MostrarTiempoYOperaciones(stopwatch, operaciones);
-                ActualizarPila();  // Mostrar la pila actualizada en el TextBox de resultados
-                TxInPut.Clear();  // Limpiar el TextBox
+                ActualizarPila();  // ACTUALIZAR PILA
+                TxInPut.Clear();  // LIMPIAR
             }
             else
             {
@@ -55,7 +56,7 @@ namespace EDDemo
 
         private void BtBuscar_Click(object sender, EventArgs e)
         {
-            string valor = TxInPut.Text;  // Usar el mismo TextBox para buscar
+            string valor = TxInPut.Text;  
             if (!string.IsNullOrEmpty(valor))
             {
                 Stopwatch stopwatch = Stopwatch.StartNew();
@@ -77,7 +78,7 @@ namespace EDDemo
             {
                 MessageBox.Show("Por favor, ingrese un valor para buscar.");
             }
-            ActualizarPila();  // Mostrar la pila actualizada en el TextBox de resultados
+            ActualizarPila();  // ACTUALIZAR
         }
 
         private void BtEliminar_Click(object sender, EventArgs e)
@@ -88,7 +89,7 @@ namespace EDDemo
 
             MessageBox.Show("Elemento eliminado: " + eliminado);
             MostrarTiempoYOperaciones(stopwatch, operaciones);
-            ActualizarPila();  // Mostrar la pila actualizada en el TextBox de resultados
+            ActualizarPila();  // ACTUALIZAR PILA
         }
 
         private void BtPilaVaciar_Click(object sender, EventArgs e)

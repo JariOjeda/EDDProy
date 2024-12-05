@@ -24,7 +24,7 @@ namespace EDDemo.Metodos_de_ordenamiento
         private void ActualizarLista()
         {
             var (recorrido, _) = lista.Recorrer();
-            txtLista.Text = recorrido;  // Mostrar el contenido de la lista en el TextBox de resultados
+            txtLista.Text = recorrido;  // MOSTRAR CONTENIDO LISTA 
         }
         private void btnGenerarLista_Click(object sender, EventArgs e)
         {
@@ -56,27 +56,27 @@ namespace EDDemo.Metodos_de_ordenamiento
 
         private void btnOrdenarLista_Click(object sender, EventArgs e)
         {
-            // Convertimos la lista de texto en la lista vinculada (ListaSimple)
+            // CONVERTIR LISTA DE TEXTO EN LISTA VINCULADA
             string[] numerosTexto = txtLista.Text.Split(new string[] { ", " }, StringSplitOptions.None);
 
 
-            // Insertamos los números en la lista
+            // INSERTA NUMEROS EN LA LISTA
             foreach (var numero in numerosTexto)
             {
-                lista.InsertarFinal(numero); // Usa el método InsertarFinal para agregar nodos
+                lista.InsertarFinal(numero); // SE HACE USO DEL METODO INSERTAR AL FINAL PARA AGG NODOS
             }
 
-            // Creamos el cronómetro para medir el tiempo de ejecución
+            // CRONOMETRO PARA TIEMPO DE EJECUCION
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
 
-            // Llamamos a la función de burbuja con la lista
+            // LLAMADA FUNCION BURBUJA
             Burbuja.OrdenarBurbuja(lista);
 
             stopwatch.Stop();
 
-            // Mostramos los resultados ordenados
-            txtListaOrdenada.Text = lista.ToString(); // Llama al método ToString() de la clase ListaSimple
+            // MOSTRAR RESULTADOS
+            txtListaOrdenada.Text = lista.ToString(); // LLAMADA AL METODO TOSTRING DE LA CLASE LISTA SIMPLE
 
             txtTiempo.Text = $"{stopwatch.ElapsedTicks} ticks";
         }

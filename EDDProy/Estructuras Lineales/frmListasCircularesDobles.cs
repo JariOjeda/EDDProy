@@ -20,6 +20,7 @@ namespace EDDemo.Estructuras_Lineales
             InitializeComponent();
         }
 
+        // MOSTRAR TIEMPO DE EJECUCCION
         private void MostrarTiempoYOperaciones(Stopwatch stopwatch, int operaciones)
         {
             long tiempoMs = stopwatch.ElapsedMilliseconds;
@@ -27,6 +28,7 @@ namespace EDDemo.Estructuras_Lineales
             TxInfo.Text = $"Tiempo: {tiempoMs} ms, {tiempoTicks} ticks, Operaciones: {operaciones}";
         }
 
+        //ACTUALIZA LISTA
         private void ActualizarLista()
         {
             var (resultado, _) = lista.Recorrer();
@@ -43,7 +45,7 @@ namespace EDDemo.Estructuras_Lineales
                 stopwatch.Stop();
 
                 MostrarTiempoYOperaciones(stopwatch, operaciones);
-                ActualizarLista();
+                ActualizarLista(); // ACTUALIZA LISTA
                 TxInPut.Clear();
                 TxPosicion.Clear();
             }
@@ -62,7 +64,7 @@ namespace EDDemo.Estructuras_Lineales
                 stopwatch.Stop();
 
                 MostrarTiempoYOperaciones(stopwatch, operaciones);
-                ActualizarLista();
+                ActualizarLista(); // ACTUALIZA LISTA
                 TxPosicion.Clear();
             }
             else
@@ -90,7 +92,7 @@ namespace EDDemo.Estructuras_Lineales
                 }
 
                 MostrarTiempoYOperaciones(stopwatch, operaciones);
-                ActualizarLista();
+                ActualizarLista(); // ACTUALIZA LISTA
                 TxInPut.Clear();
             }
             else
@@ -105,7 +107,7 @@ namespace EDDemo.Estructuras_Lineales
             {
                 lista.Eliminar(1);
             }
-            ActualizarLista();
+            ActualizarLista(); // ACTUALIZA LISTA
             MessageBox.Show("La lista ha sido vaciada");
         }
     }

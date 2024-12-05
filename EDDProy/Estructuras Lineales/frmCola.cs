@@ -20,11 +20,14 @@ namespace EDDemo.Estructuras_Lineales
             InitializeComponent();
         }
 
+        //ACTUALIZA COLA
         private void ActualizarCola()
         {
             var (recorrido, _) = cola.Recorrer();
-            TxResultado.Text = recorrido;  // Mostrar el contenido de la cola en el TextBox de resultados
+            TxResultado.Text = recorrido;  // MOSTRAR CONTENIDO EN RESULTADOS
         }
+
+        // MOSTRAR TIEMPO DE EJECUCCION
         private void MostrarTiempoYOperaciones(Stopwatch stopwatch, int operaciones)
         {
             long tiempoMs = stopwatch.ElapsedMilliseconds;
@@ -46,12 +49,12 @@ namespace EDDemo.Estructuras_Lineales
 
             MessageBox.Show("Elemento desencolado: " + eliminado);
             MostrarTiempoYOperaciones(stopwatch, operaciones);
-            ActualizarCola();  // Mostrar la cola actualizada
+            ActualizarCola();  // ACTUALIZAR Y MOSTRAR COLA
         }
 
         private void BtBuscar_Click(object sender, EventArgs e)
         {
-            string valor = TxInPut.Text;  // Usar el mismo TextBox para buscar
+            string valor = TxInPut.Text; 
             if (!string.IsNullOrEmpty(valor))
             {
                 Stopwatch stopwatch = Stopwatch.StartNew();
@@ -73,21 +76,21 @@ namespace EDDemo.Estructuras_Lineales
             {
                 MessageBox.Show("Por favor, ingrese un valor para buscar.");
             }
-            ActualizarCola();  // Mostrar la cola actualizada
+            ActualizarCola(); 
         }
 
         private void BtQueue_Click(object sender, EventArgs e)
         {
-            string dato = TxInPut.Text;  // Obtener el dato del TextBox
+            string dato = TxInPut.Text;  
             if (!string.IsNullOrEmpty(dato))
             {
                 Stopwatch stopwatch = Stopwatch.StartNew();
-                int operaciones = cola.Queue(dato);  // Encolar el dato
+                int operaciones = cola.Queue(dato);  // ENCOLAR
                 stopwatch.Stop();
 
                 MostrarTiempoYOperaciones(stopwatch, operaciones);
-                ActualizarCola();  // Mostrar la cola actualizada
-                TxInPut.Clear();  // Limpiar el TextBox
+                ActualizarCola();  // MOSTRAR COLA ACTUALIZADA
+                TxInPut.Clear();  
             }
             else
             {

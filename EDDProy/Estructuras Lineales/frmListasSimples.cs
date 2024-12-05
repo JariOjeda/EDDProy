@@ -20,13 +20,14 @@ namespace EDDemo.Estructuras_Lineales
             InitializeComponent();
         }
 
+        //ACTUALIZA LISTA
         private void ActualizarLista()
         {
             var (recorrido, _) = lista.Recorrer();
-            TxResultado.Text = recorrido;  // Mostrar el contenido de la lista en el TextBox de resultados
+            TxResultado.Text = recorrido;  
         }
 
-        // Método para mostrar el tiempo y operaciones en el TextBox de información
+        // MOSTRAR TIEMPO DE EJECUCCION
         private void MostrarTiempoYOperaciones(Stopwatch stopwatch, int operaciones)
         {
             long tiempoMs = stopwatch.ElapsedMilliseconds;
@@ -40,7 +41,7 @@ namespace EDDemo.Estructuras_Lineales
             if (!string.IsNullOrEmpty(valor))
             {
                 Stopwatch stopwatch = Stopwatch.StartNew();
-                int operaciones = lista.InsertarInicio(valor);  // Insertar al inicio
+                int operaciones = lista.InsertarInicio(valor);  // INSERTA EN EL INICIO
                 stopwatch.Stop();
 
                 MostrarTiempoYOperaciones(stopwatch, operaciones);
@@ -59,12 +60,12 @@ namespace EDDemo.Estructuras_Lineales
             if (!string.IsNullOrEmpty(valor))
             {
                 Stopwatch stopwatch = Stopwatch.StartNew();
-                int operaciones = lista.InsertarFinal(valor);  // Insertar al final
+                int operaciones = lista.InsertarFinal(valor);  // INSERTA EN EL FINAL
                 stopwatch.Stop();
 
                 MostrarTiempoYOperaciones(stopwatch, operaciones);
-                ActualizarLista();
-                TxInPut.Clear();
+                ActualizarLista(); // ACTUALIZAR LISTA
+                TxInPut.Clear(); // LIMPIAR
             }
             else
             {
@@ -78,7 +79,7 @@ namespace EDDemo.Estructuras_Lineales
             if (!string.IsNullOrEmpty(valor))
             {
                 Stopwatch stopwatch = Stopwatch.StartNew();
-                var (posicion, operaciones) = lista.Buscar(valor);  // Buscar el valor
+                var (posicion, operaciones) = lista.Buscar(valor);  // BUSCAR VALOR
                 stopwatch.Stop();
 
                 if (posicion >= 0)
@@ -91,7 +92,7 @@ namespace EDDemo.Estructuras_Lineales
                 }
 
                 MostrarTiempoYOperaciones(stopwatch, operaciones);
-                ActualizarLista();
+                ActualizarLista(); // ACTUALIZAR LISTA
             }
             else
             {
@@ -106,11 +107,11 @@ namespace EDDemo.Estructuras_Lineales
             if (!string.IsNullOrEmpty(valor))
             {
                 Stopwatch stopwatch = Stopwatch.StartNew();
-                int operaciones = lista.EliminarValor(valor);  // Eliminar el valor
+                int operaciones = lista.EliminarValor(valor);  // ELIMINAR VALOR
                 stopwatch.Stop();
 
                 MostrarTiempoYOperaciones(stopwatch, operaciones);
-                ActualizarLista();
+                ActualizarLista(); // ACTUALIZAR LISTA
                 TxInPut.Clear();
             }
             else
@@ -125,11 +126,11 @@ namespace EDDemo.Estructuras_Lineales
             if (int.TryParse(TxPosicion.Text, out int posicion) && !string.IsNullOrEmpty(valor))
             {
                 Stopwatch stopwatch = Stopwatch.StartNew();
-                int operaciones = lista.InsertarPos(valor, posicion);  // Insertar en posición
+                int operaciones = lista.InsertarPos(valor, posicion);  // INSERTAR POSICION
                 stopwatch.Stop();
 
                 MostrarTiempoYOperaciones(stopwatch, operaciones);
-                ActualizarLista();
+                ActualizarLista(); // ACTUALIZAR LISTA
                 TxInPut.Clear();
                 TxPosicion.Clear();
             }
@@ -145,7 +146,7 @@ namespace EDDemo.Estructuras_Lineales
             {
                 lista.EliminarTop();
             }
-            ActualizarLista();
+            ActualizarLista(); // ACTUALIZAR LISTA
             MessageBox.Show("La lista ha sido vaciada");
         }
     }

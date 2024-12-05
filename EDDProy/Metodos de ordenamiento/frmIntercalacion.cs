@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using EDDemo.Metodos_de_ordenamiento.Clases;
 using System.Diagnostics;
-using EDDemo.Metodos_de_ordenamiento.Clases; 
 
 namespace EDDemo.Metodos_de_ordenamiento
 {
@@ -25,6 +24,7 @@ namespace EDDemo.Metodos_de_ordenamiento
         private HashSet<int> ArchivoNum1 = new HashSet<int>();
         private HashSet<int> ArchivoNum2 = new HashSet<int>();
 
+        // GENERAR ARCHIVO
         private void GenerarArchivo(int NumElementos, int archivo)
         {
             HashSet<int> NumsGenerados = archivo == 1 ? ArchivoNum1 : ArchivoNum2;
@@ -84,6 +84,8 @@ namespace EDDemo.Metodos_de_ordenamiento
                 MessageBox.Show("Elemento invalido");
             }
         }
+
+        // CREAR LISTA
         private ListaSimple CrearLista(string texto)
         {
             ListaSimple lista = new ListaSimple();

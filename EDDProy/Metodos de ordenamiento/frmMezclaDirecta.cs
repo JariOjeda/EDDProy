@@ -53,25 +53,25 @@ namespace EDDemo.Metodos_de_ordenamiento
         {
             string[] numerosTexto = TxtLista.Text.Split(new string[] { ", " }, StringSplitOptions.None);
 
-            // Insertamos los números en la lista enlazada
+            // INSERTAR NUMEROS EN LISTA ENLAZADA
             foreach (var numero in numerosTexto)
             {
-                lista.InsertarFinal(numero);  // Insertamos al final de la lista
+                lista.InsertarFinal(numero);  // INSERTAR AL FINAL EN LA LISTA
             }
 
-            // Usamos un cronómetro para medir el tiempo de ejecución
+            // CRONOMETRO PARA MEDIR TIEMPO
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
 
-            // Llamamos al algoritmo Mezcla Directa para ordenar la lista
+            // LLAMADA AL ALGORITMO MEZLCA DIRECTA PARA ORDENAR LISTA
             lista = MezclaDirecta.MezclaDire(lista);
 
             stopwatch.Stop();
 
-            // Mostramos la lista ordenada en txtOrdenado
-            TxtListaOrdenada.Text = lista.ToString();  // Usamos ToString para mostrar los números ordenados
+            // MOSTRAR LISTA ORDENADA
+            TxtListaOrdenada.Text = lista.ToString();  // USAMOS TOSTRING PARA MOSTRAR NUMEROS ORDENADOS
 
-            // Mostramos el tiempo de ejecución en el TextBox txtTiempo
+            // Tiempo MOSTRAR TIEMPO DE EJECUCCION 
             txtTiempo.Text = $"{stopwatch.ElapsedTicks} ticks";
         }
     }

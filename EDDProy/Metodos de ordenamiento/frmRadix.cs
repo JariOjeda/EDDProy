@@ -34,7 +34,7 @@ namespace EDDemo.Metodos_de_ordenamiento
                     lista.InsertarFinal(numero.ToString());
                 }
 
-                // Mostrar la lista generada en el TextBox
+                // MOSTRAR LISTA
                 TxtLista.Text = lista.ToString();
             }
             else
@@ -46,17 +46,17 @@ namespace EDDemo.Metodos_de_ordenamiento
         {
             ListaSimple lista = new ListaSimple();
 
-            // Dividir el texto usando "->", "," y espacios como separadores
+            // "->", "," 
             string[] valores = texto.Split(new string[] { "->", ",", " " }, StringSplitOptions.RemoveEmptyEntries);
 
             foreach (string valor in valores)
             {
                 string trimmedValue = valor.Trim();
 
-                // Ignorar específicamente el texto "null" y validar si el valor es un número entero
+                // VALIDAR EL VALOR ES UN NUMERO ENTERO
                 if (trimmedValue.Equals("null", StringComparison.OrdinalIgnoreCase))
                 {
-                    continue; // Ignorar el texto "null"
+                    continue; 
                 }
 
                 if (int.TryParse(trimmedValue, out int _))
@@ -65,7 +65,6 @@ namespace EDDemo.Metodos_de_ordenamiento
                 }
                 else
                 {
-                    // Solo mostrar advertencia si el valor no está vacío y no es "null"
                     if (!string.IsNullOrEmpty(trimmedValue))
                     {
                         MessageBox.Show($"El valor '{valor}' no es válido y será ignorado.",
@@ -91,7 +90,7 @@ namespace EDDemo.Metodos_de_ordenamiento
                 return;
             }
 
-            // Convertimos el contenido de TxtLista a una ListaSimple
+            // CONVERTIR TXT A LISTA SIMPLE
             ListaSimple lista = CrearListaDesdeTextBox(TxtLista.Text);
 
             if (lista.estaVacio())
@@ -103,20 +102,19 @@ namespace EDDemo.Metodos_de_ordenamiento
                 return;
             }
 
-            // Iniciar el cronómetro
+            // INICIAR CRONOMETRO
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
 
-            // Llamamos al algoritmo Radix para ordenar la ListaSimple
+            // LLAMADAS A RADIX PARA ORDENAR LISTA SIMPLE
             Radix.FuncionRadix(lista);
 
-            // Detener el cronómetro
+            // DDETENER CRONOMETRO
             stopwatch.Stop();
 
-            // Mostrar la lista ordenada en TxtListaOrdenada
-            TxtListaOrdenada.Text = lista.ToString(); // ListaSimple debe implementar ToString correctamente
+            // MOSTRAR LISTA ORDENADA
+            TxtListaOrdenada.Text = lista.ToString(); // IMPLEMENTACION DE TOSTRING PARA LISTA SIMPLE
 
-            // Mostrar el tiempo de ejecución
             txtTiempo.Text = $"{stopwatch.ElapsedTicks} ticks";
         }
     }

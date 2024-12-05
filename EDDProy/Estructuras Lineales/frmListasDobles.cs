@@ -20,13 +20,14 @@ namespace EDDemo.Estructuras_Lineales
             InitializeComponent();
         }
 
+        //ACTUALIZA LISTA
         private void ActualizarLista()
         {
             var (resultado, _) = lista.RecorrerAdelante();
-            TxResultado.Text = resultado;  // Mostrar la lista en el TextBox
+            TxResultado.Text = resultado;  
         }
 
-        // Mostrar tiempo y operaciones en el TextBox de información
+        // MOSTRAR TIEMPO DE EJECUCCION
         private void MostrarTiempoYOperaciones(Stopwatch stopwatch, int operaciones)
         {
             long tiempoMs = stopwatch.ElapsedMilliseconds;
@@ -44,7 +45,7 @@ namespace EDDemo.Estructuras_Lineales
                 stopwatch.Stop();
 
                 MostrarTiempoYOperaciones(stopwatch, operaciones);
-                ActualizarLista();  // Recorrer hacia adelante
+                ActualizarLista();  // ACTUALIZA Y RECCORE HACIA ADELANTE
                 TxInPut.Clear();
                 TxPosicion.Clear();
             }
@@ -63,7 +64,7 @@ namespace EDDemo.Estructuras_Lineales
                 stopwatch.Stop();
 
                 MostrarTiempoYOperaciones(stopwatch, operaciones);
-                ActualizarLista();  // Recorrer hacia adelante
+                ActualizarLista();  // ACTUALIZA Y RECCORE HACIA ADELANTE
                 TxPosicion.Clear();
             }
             else
@@ -91,7 +92,7 @@ namespace EDDemo.Estructuras_Lineales
                 }
 
                 MostrarTiempoYOperaciones(stopwatch, operaciones);
-                ActualizarLista();  // Recorrer hacia adelante
+                ActualizarLista();  // ACTUALIZA Y RECCORE HACIA ADELANTE
                 TxInPut.Clear();
             }
             else
@@ -102,7 +103,7 @@ namespace EDDemo.Estructuras_Lineales
 
         private void BtRecorrerAtras_Click(object sender, EventArgs e)
         {
-            TxResultado.Clear();  // Limpiar el TextBox de resultados
+            TxResultado.Clear();  
 
             Stopwatch stopwatch = Stopwatch.StartNew();
             var (resultado, operaciones) = lista.RecorrerAtras();
@@ -118,7 +119,7 @@ namespace EDDemo.Estructuras_Lineales
             {
                 lista.Eliminar(0);
             }
-            ActualizarLista();
+            ActualizarLista(); // ACTUALIZAR LISTA
             MessageBox.Show("La lista ha sido vaciada");
         }
     }
