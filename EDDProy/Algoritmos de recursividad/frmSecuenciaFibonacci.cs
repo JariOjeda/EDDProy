@@ -1,0 +1,42 @@
+﻿using EDDemo.Algoritmos_de_recursividad.Clases;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace EDDemo.Algoritmos_de_recursividad
+{
+    public partial class frmSecuenciaFibonacci : Form
+    {
+        Fibonacci fibonacci = new Fibonacci();
+        public frmSecuenciaFibonacci()
+        {
+            InitializeComponent();
+        }
+
+        private void btEnterFib_Click(object sender, EventArgs e)
+        {
+            int n;
+            // Asegúrate de que el valor ingresado sea numérico
+            if (int.TryParse(txtboxEscribirFib.Text, out n) && n >= 0)
+            {
+                // Obtener la secuencia de Fibonacci
+                string resultadoFibonacci = fibonacci.ObtenerFibonacci(n);
+                // Mostrar el resultado en el TextBox
+                textBoxResultadoFib.Text = $"La secuencia de Fibonacci hasta {n} es: {resultadoFibonacci}\n";
+
+                // Hacer visible el TextBox con el resultado
+                textBoxResultadoFib.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show("Por favor, ingresa un número entero válido y no negativo.");
+            }
+        }
+    }
+}

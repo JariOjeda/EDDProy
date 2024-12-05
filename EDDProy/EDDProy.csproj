@@ -52,6 +52,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algoritmos de recursividad\Clases\BusquedaBinaria.cs" />
+    <Compile Include="Algoritmos de recursividad\Clases\Factorial.cs" />
+    <Compile Include="Algoritmos de recursividad\Clases\Fibonacci.cs" />
+    <Compile Include="Algoritmos de recursividad\Clases\Potencia.cs" />
+    <Compile Include="Algoritmos de recursividad\Clases\SumarArreglo.cs" />
+    <Compile Include="Algoritmos de recursividad\Clases\TorresDeHanoi.cs" />
+    <Compile Include="Algoritmos de recursividad\frmBusquedaBinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Algoritmos de recursividad\frmBusquedaBinaria.Designer.cs">
+      <DependentUpon>frmBusquedaBinaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Algoritmos de recursividad\frmCalculoExponente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Algoritmos de recursividad\frmCalculoExponente.Designer.cs">
+      <DependentUpon>frmCalculoExponente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Algoritmos de recursividad\frmFactorialNum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Algoritmos de recursividad\frmFactorialNum.Designer.cs">
+      <DependentUpon>frmFactorialNum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Algoritmos de recursividad\frmSecuenciaFibonacci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Algoritmos de recursividad\frmSecuenciaFibonacci.Designer.cs">
+      <DependentUpon>frmSecuenciaFibonacci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Algoritmos de recursividad\frmSumarElementos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Algoritmos de recursividad\frmSumarElementos.Designer.cs">
+      <DependentUpon>frmSumarElementos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Algoritmos de recursividad\frmTorreHanoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Algoritmos de recursividad\frmTorreHanoi.Designer.cs">
+      <DependentUpon>frmTorreHanoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Clases\Colas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Clases\Colas.Designer.cs">
+      <DependentUpon>Colas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estructuras Lineales\Clases\Listas.cs" />
     <Compile Include="Estructuras Lineales\Clases\Nodo.cs" />
     <Compile Include="Estructuras Lineales\Clases\Pilas.cs" />
@@ -84,6 +132,24 @@
     <Compile Include="Graphviz.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Algoritmos de recursividad\frmBusquedaBinaria.resx">
+      <DependentUpon>frmBusquedaBinaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Algoritmos de recursividad\frmCalculoExponente.resx">
+      <DependentUpon>frmCalculoExponente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Algoritmos de recursividad\frmFactorialNum.resx">
+      <DependentUpon>frmFactorialNum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Algoritmos de recursividad\frmSecuenciaFibonacci.resx">
+      <DependentUpon>frmSecuenciaFibonacci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Algoritmos de recursividad\frmSumarElementos.resx">
+      <DependentUpon>frmSumarElementos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Algoritmos de recursividad\frmTorreHanoi.resx">
+      <DependentUpon>frmTorreHanoi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estructuras No Lineales\frmArboles.resx">
       <DependentUpon>frmArboles.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +185,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Metodos de busqueda\" />
+    <Folder Include="Metodos de ordenamiento\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
