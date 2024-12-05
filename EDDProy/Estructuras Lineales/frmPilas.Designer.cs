@@ -36,17 +36,19 @@ namespace EDDemo
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(172, 74);
+            this.textBox1.Location = new System.Drawing.Point(86, 38);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(139, 48);
+            this.textBox1.Size = new System.Drawing.Size(72, 27);
             this.textBox1.TabIndex = 0;
             // 
             // btnPush
             // 
-            this.btnPush.Location = new System.Drawing.Point(368, 74);
+            this.btnPush.Location = new System.Drawing.Point(184, 38);
+            this.btnPush.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPush.Name = "btnPush";
-            this.btnPush.Size = new System.Drawing.Size(85, 40);
+            this.btnPush.Size = new System.Drawing.Size(42, 21);
             this.btnPush.TabIndex = 1;
             this.btnPush.Text = "Push";
             this.btnPush.UseVisualStyleBackColor = true;
@@ -54,21 +56,23 @@ namespace EDDemo
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(368, 130);
+            this.button1.Location = new System.Drawing.Point(184, 68);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 40);
+            this.button1.Size = new System.Drawing.Size(42, 21);
             this.button1.TabIndex = 2;
             this.button1.Text = "Pop";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // frmPilas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(582, 527);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnPush);
             this.Controls.Add(this.textBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmPilas";
             this.Text = "frmPilas";
             this.ResumeLayout(false);
