@@ -24,7 +24,7 @@ namespace EDDemo.Algoritmos_de_recursividad
             string[] input = txtboxArregloEscribir.Text.Split(',');
             int[] arreglo = new int[input.Length];
 
-            // Convertir los elementos del arreglo de string a int
+            // CONVIERTE LOS ELEMENTOS DEL ARREGLO DE STRING A INT
             for (int i = 0; i < input.Length; i++)
             {
                 if (!int.TryParse(input[i].Trim(), out arreglo[i]))
@@ -34,7 +34,7 @@ namespace EDDemo.Algoritmos_de_recursividad
                 }
             }
             int suma = arreglos.Sumar(arreglo);
-            // Mostrar el arreglo y el resultado en el TextBox
+            // MOSTRAR RESULTADOS
             StringBuilder sb = new StringBuilder();
             sb.Append("Arreglo: ");
             foreach (var item in arreglo)
@@ -43,7 +43,7 @@ namespace EDDemo.Algoritmos_de_recursividad
             }
             sb.Append($"\nSuma de los elementos: {suma}\n");
             ResultadoArregloTxtBox.Text = sb.ToString();
-            // Hacer visible el TextBox con el resultado
+
             ResultadoArregloTxtBox.Visible = true;
         }
     }

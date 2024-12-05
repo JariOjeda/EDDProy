@@ -23,11 +23,11 @@ namespace EDDemo.Algoritmos_de_recursividad
             int n;
             if (int.TryParse(CuadroTxtFact.Text, out n) && n >= 0)
             {
-                // Calcular el factorial
+                // CALCULA FACTORIAL
                 long resultado = factorial.fact(n);
-                // Mostrar el resultado en el TextBox
+                // MUESTRA RESULTADO
                 textBoxResultadoFact.Text = $"El factorial de {n} es: {resultado}\n";
-                // Hacer visible el TextBox después de calcular el resultado
+
                 textBoxResultadoFact.Visible = true;
             }
             else

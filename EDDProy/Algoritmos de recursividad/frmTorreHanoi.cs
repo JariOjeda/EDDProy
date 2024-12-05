@@ -24,14 +24,14 @@ namespace EDDemo.Algoritmos_de_recursividad
             int n;
             if (int.TryParse(LeerDiscosTxtBox.Text, out n) && n >= 1)
             {
-                // Usar StringBuilder para acumular el resultado
+                // ACUMULAR RESULTADO CON STRINGBUILDER
                 StringBuilder resultado = new StringBuilder();
-                // Ejecutar el algoritmo de Torres de Hanoi
+                // EJECUTAR ALGORITMO
                 hanoi.MoverDiscos(n, 'A', 'C', 'B', resultado);
-                // Mostrar el resultado en el TextBox
+                // MOSTRAR RESULTADO
                 ResultadoHanoiTxtBox.Text = resultado.ToString();
 
-                // Hacer visible el TextBox con el resultado
+
                 ResultadoHanoiTxtBox.Visible = true;
             }
             else

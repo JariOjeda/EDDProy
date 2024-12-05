@@ -22,15 +22,15 @@ namespace EDDemo.Algoritmos_de_recursividad
         private void btEnterFib_Click(object sender, EventArgs e)
         {
             int n;
-            // Asegúrate de que el valor ingresado sea numérico
+            // EL VALOR INGRESADO DEBE SER NUMERICO
             if (int.TryParse(txtboxEscribirFib.Text, out n) && n >= 0)
             {
-                // Obtener la secuencia de Fibonacci
+                // OBTENER SECUENCIA FIBONACCI
                 string resultadoFibonacci = fibonacci.ObtenerFibonacci(n);
-                // Mostrar el resultado en el TextBox
+                // MUESTRA RESULTADO
                 textBoxResultadoFib.Text = $"La secuencia de Fibonacci hasta {n} es: {resultadoFibonacci}\n";
 
-                // Hacer visible el TextBox con el resultado
+
                 textBoxResultadoFib.Visible = true;
             }
             else

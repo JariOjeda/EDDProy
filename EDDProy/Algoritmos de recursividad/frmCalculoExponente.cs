@@ -23,15 +23,14 @@ namespace EDDemo.Algoritmos_de_recursividad
         {
             int baseNum, exponente;
 
-            // Asegurarse de que ambos valores ingresados sean numéricos
+            // AMBOS VALORES DEBEN SER NUMERICOS
             if (int.TryParse(EscribirBaseTxtBox.Text, out baseNum) && int.TryParse(ExcribirExponenteTxtBox.Text, out exponente) && exponente >= 0)
             {
-                // Calcular la potencia
+                // CALCULA LA POTENCIA
                 int resultado = poten.Pot(baseNum, exponente);
-                // Mostrar el resultado en un TextBox
+                // MUESTRA EL RESULTADO
                 ResultadoExpoTxtBox.Text = $"El resultado de {baseNum}^{exponente} es: {resultado}\n";
 
-                // Hacer visible el TextBox con el resultado
                 ResultadoExpoTxtBox.Visible = true;
             }
             else

@@ -26,11 +26,11 @@ namespace EDDemo.Algoritmos_de_recursividad
             int numElementos;
             if (int.TryParse(EscribirNumElementosBusquedaTxtBox.Text, out numElementos) && numElementos > 0)
             {
-                // Generar y ordenar el arreglo
+                // GENERA Y ORDENA EL ARREGLO
                 arreglo = bbinaria.GenerarArregloAleatorio(numElementos);
                 Array.Sort(arreglo);
 
-                // Mostrar el arreglo ordenado
+                // MUESTRA EL ARREGLO ORDENADO
                 ResultadoGenerarArregloTxtBox.Text = "Arreglo ordenado: \n" + string.Join(" ", arreglo);
                 ResultadoGenerarArregloTxtBox.Visible = true;
             }
@@ -42,10 +42,10 @@ namespace EDDemo.Algoritmos_de_recursividad
 
         private void btBuscarEnArreglo_Click(object sender, EventArgs e)
         {
-            // Iniciar el temporizador
+            // INICIA EL TEMP
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
-            if (arreglo == null || arreglo.Length == 0) // Validar que el arreglo esté inicializado
+            if (arreglo == null || arreglo.Length == 0) // VALIDA QUE ESTE INICIALIZADO EL ARREGLO
             {
                 MessageBox.Show("Por favor, genera un arreglo antes de realizar la búsqueda.");
                 return;
@@ -53,12 +53,12 @@ namespace EDDemo.Algoritmos_de_recursividad
             int numeroBuscado;
             if (int.TryParse(PedirNumeroBusquedaTxtBox.Text, out numeroBuscado))
             {
-                // Llamada a la función recursiva para buscar el número
+                // LLAMA A LA FUNCION RECURSIVA PARA BUSCAR EL NUMERO
                 List<int> indices = bbinaria.BuscarTodosIndices(arreglo, numeroBuscado, 0, arreglo.Length - 1);
-                // Mostrar el resultado
+                // MUESTRA RESULTADO
                 if (indices.Count == 0)
                 {
-                    ResultadoIndicesTxtBox.Text = "Número no encontrado en el arreglo.";
+                    ResultadoIndicesTxtBox.Text = "Número no encontrado.";
                 }
                 else
                 {
@@ -71,10 +71,10 @@ namespace EDDemo.Algoritmos_de_recursividad
             {
                 MessageBox.Show("Por favor, ingresa un número entero válido.");
             }
-            // Detener el temporizador
+            // DET TEMP
             stopwatch.Stop();
 
-            // Mostrar el tiempo en ticks en el label
+            // MUESTRA TIEMPO EN TICKS 
             LblTiempo.Text = $"Tiempo de búsqueda: {stopwatch.ElapsedTicks} ticks";
         }
     }
